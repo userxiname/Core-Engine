@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.AgentResource" table="agent_resource">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="native"/>
+        </id>
+        <property name="ip" type="java.lang.String">
+            <column name="ip"/>
+        </property>
+        <property name="port" type="java.lang.String">
+            <column name="port"/>
+        </property>
+        <property name="crtTime" type="java.lang.String">
+            <column name="crtTime"/>
+        </property>
+        <property name="value" type="java.lang.String">
+            <column name="value"/>
+        </property>
+        <property name="source" type="java.lang.String">
+            <column name="source"/>
+        </property>
+        <property name="usedTimes" type="java.lang.Integer">
+            <column name="usedTimes"/>
+        </property>
+        <property name="ping" type="java.lang.Integer">
+            <column name="ping"/>
+        </property>
+        <property name="location" type="java.lang.String">
+            <column name="location"/>
+        </property>
+        <property name="agentType" type="java.lang.String">
+            <column name="agentType"/>
+        </property>
+        <property name="lastCheckTime" type="java.lang.String">
+            <column name="lastCheckTime"/>
+        </property>
+        <property name="responseTime" type="java.lang.String">
+            <column name="responseTime"/>
+        </property>
+        <property name="security" type="java.lang.String">
+            <column name="security"/>
+        </property>
+        <property name="liveTime" type="java.lang.String">
+            <column name="liveTime"/>
+        </property>
+        <property name="testTimes" type="java.lang.Integer">
+            <column name="testTimes"/>
+        </property>
+        <property name="testSuccTimes" type="java.lang.Integer">
+            <column name="testSuccTimes"/>
+        </property>
+        <property name="testSuccRate" type="java.lang.Integer">
+            <column name="testSuccRate"/>
+        </property>
+        <property name="lastSuccTime" type="java.lang.String">
+            <column name="lastSuccTime"/>
+        </property>
+    </class>
+</hibernate-mapping>
